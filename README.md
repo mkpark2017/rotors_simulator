@@ -17,7 +17,7 @@ Installation Instructions - Ubuntu 16.04 with ROS Kinetic
  $ cd ~/catkin_ws/src
  $ catkin_init_workspace  # initialize your catkin workspace
  $ wstool init
- $ wget https://github.com/mkpark2017/rotors_simulator/tree/kinetic/3D_LiDAR/rotors_velodyne.rosinstall
+ $ wget https://raw.githubusercontent.com/mkpark2017/rotors_simulator/tree/kinetic/3D_LiDAR/rotors_velodyne.rosinstall
  $ wstool merge rotors_velodyne.rosinstall
  $ wstool update
  ```
