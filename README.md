@@ -93,7 +93,7 @@ Run waypoint publisher,
 ```
 rosrun rotors_gazebo waypoint_publisher 1 0 1 0 0 __ns:=firefly
 ```
-The order of numbers are <x> <y> <z> <yaw_deg> <delay>
+The order of numbers are x, y, z, yaw_deg, and delay
 
 Gazebo Version
 --------------
