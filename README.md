@@ -87,6 +87,14 @@ $ roslaunch rotors_gazebo mav_with_keyboard.launch mav_name:=firefly world_name:
 
 If everything was setup correctly, an additional GUI should appear with bars indicating the current throttle, roll, pitch, and yaw inputs. While this window is active, the Arrows and W, A, S, D keys will generate virtual joystick inputs, which can then be processed by the RotorS joystick node in the same way as real joystick commands.
 
+#### Usage with a waypoint publisher
+
+Run waypoint publisher,
+```
+rosrun rotors_gazebo waypoint_publisher 1 0 1 0 0 __ns:=firefly
+```
+The order of numbers are <x> <y> <z> <yaw_deg> <delay>
+
 Gazebo Version
 --------------
 
