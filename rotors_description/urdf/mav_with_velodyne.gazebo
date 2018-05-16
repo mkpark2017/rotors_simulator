@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+
+<robot name="$(arg mav_name)" xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- Instantiate the mav with a generic odometry sensor. -->
+  <xacro:include filename="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo" />
+
+  <xacro:include filename="$(find velodyne_description)/urdf/VLP-16-namespacing.urdf.xacro"/>
+  <VLP-16 namespace="${namespace}" parent="base_link" name="velodyne" topic="velodyne_points" hz="10" samples="440">
+    <origin xyz="0 0 0.0" rpy="3.14 1.57 0" />
+  </VLP-16>
+
+</robot>
