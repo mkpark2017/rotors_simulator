@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+
+<robot name="$(arg mav_name)" xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- Instantiate the mav with a generic odometry sensor. -->
+  <xacro:include filename="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo" />
+
+  <xacro:include filename="$(find rotors_description)/urdf/hokuyo_utm301x.urdf.xacro"/>
+  <hokuyo_utm30lx namespace="${namespace}" parent="base_link" name="hokuyo" ros_topic="scan" update_rate="40" ray_count="1081" min_angle="-179" max_angle="179" min_range="0.2" max_range="30.0">
+    <origin xyz="0 0 -0.1" rpy="0 0 0" />
+  </hokuyo_utm30lx>
+
+</robot>
