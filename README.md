@@ -26,6 +26,8 @@ Installation Instructions - Ubuntu 16.04 with ROS Kinetic
 
    ```
    $ cd ~/catkin_ws/
+   $ rosdep check --from-paths src --ignor-src --rosdistro kinetic
+   $ rosdep install --from-paths src --ignor-src --rosdistro kinetic
    $ catkin build
    ```
 
